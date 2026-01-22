@@ -1,24 +1,49 @@
-# Heart-Disease-Prediction
+# Heart Disease Prediction with Logistic and Bayesian Models
 
-This project compares standard logistic regression and Bayesian logistic regression (via Pyro) for predicting heart disease using the UCI Cleveland Heart Disease dataset.
+## Overview
+This project compares **standard logistic regression** and **Bayesian logistic regression** for predicting the presence of heart disease using the **UCI Cleveland Heart Disease dataset**. The goal is to evaluate predictive performance while highlighting the benefits of Bayesian methods for modeling uncertainty.
 
-Overview
-Goal: Predict presence of heart disease (binary classification)
+---
 
-Models:
-Logistic Regression (scikit-learn)
-Bayesian Logistic Regression (Pyro)
+## Objective
+- Perform **binary classification** to predict heart disease
+- Compare frequentist and Bayesian modeling approaches
+- Analyze predictive uncertainty in model outputs
 
-Dataset: processed.cleveland.data
+---
 
-Output: Classification metrics (accuracy, ROC AUC, Brier score)
+## Models Implemented
+- **Logistic Regression** (scikit-learn)
+- **Bayesian Logistic Regression** (Pyro)
 
-ROC curve comparison: Predictive uncertainty (entropy histogram)
+---
 
-How to Run
-Install dependencies:
+## Dataset
+- **Source:** UCI Cleveland Heart Disease Dataset  
+- **File:** `processed.cleveland.data`  
+- **Preprocessing:** Dataset is preprocessed prior to model training
+
+---
+
+## Evaluation Metrics
+- Classification accuracy  
+- ROC AUC  
+- Brier score  
+- ROC curve comparison  
+- Predictive uncertainty analysis using entropy histograms  
+
+---
+
+## Output
+The project generates:
+- Performance metrics for both models
+- ROC curves comparing classification performance
+- Visualizations illustrating predictive uncertainty in the Bayesian model
+
+---
+
+## How to Run
+
+### Install Dependencies
+```bash
 pip install pandas numpy torch pyro-ppl scikit-learn matplotlib seaborn
-Download the dataset and place processed.cleveland.data in the same folder.
-
-Run the script:
-python heart_disease_prediction.py
